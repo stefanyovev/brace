@@ -62,7 +62,6 @@
 						break; }
 				i2++; }
 
-
 		line2[i2] = 0;
 
 		if( br1 ){
