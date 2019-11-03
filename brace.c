@@ -44,7 +44,6 @@
 
 			br2 = br1; string = 0;
 			while( line2[i2] != '\n' ){
-				i2++;
 				switch( line2[i2] ){
 					case '(':
 						if( !string )
@@ -60,7 +59,9 @@
 					case '\\':
 						if( string )
 							i2++;
-						break; } }
+						break; }
+				i2++; }
+
 
 		line2[i2] = 0;
 
