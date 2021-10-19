@@ -245,8 +245,8 @@
 		t = F3;
 		while( t ){
 			if( t->str[0] == '#' || t->str[0] == '\"' || t->str[0] == '('
-			|| (t->str[0] == '/' || t->str[1] == '/') 
-			|| (t->str[0] == '/' || t->str[1] == '*')
+			|| (t->str[0] == '/' && t->str[1] == '/') 
+			|| (t->str[0] == '/' && t->str[1] == '*')
 			|| no_glyphs( t->str ) )
 				append( &F4, t->str );
 			else {
